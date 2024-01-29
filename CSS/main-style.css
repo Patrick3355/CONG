@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* CSS Document */
+  
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cousine&display=swap');
+
+body{
+	font-size: 18px;
+	font-family: 'Cousine', monospace;
+}
+
+
+
+
+
+#header {
+	background-color: white;
+	height: 30px;
+	
+	
+}
+#header .container{
+	display: flex;
+	
+}
+#header .container img{
+	width: 80px;
+	padding: 10px 0;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu ul li {
+	position: relative;
+	margin: 7px 10px;
+	
+}
+.menu ul li a {
+	color:#232323;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 20px;
+	display: block;
+	font-weight: 800;
+	transition: all 0.5s;
+	font-family: 'Cousine', monospace;
+	width: 150px;
+	text-align: center;
+	
+	
+}
+
+.menu ul li a:hover{
+	color: #0C0000
+}
+.menu ul ul {
+	display: block;
+	background: #fff ;
+	box-shadow: 0 5px 5px rgba(200,200,200,0.5);
+	position: absolute;
+	width: 170px;
+	top: 100%;
+	margin-top: 0px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	z-index: 999999;
+	color: white;
+	
+}
+
+.menu ul li:hover>ul{
+	opacity: 1;
+	visibility:visible;
+	top: 100%;
+	
+}
+
+
+
+
+
+/*...............................BANNER*/
+
+
+#banner{
+	margin-top: 60px;
+}
+#banner .item{
+	position: relative;
+	width: 100%;
+	}
+
+#banner .item img{
+	height: 900px;
+	object-fit: cover;
+	background: center;
+}
+#banner .item .nen-caption{
+	
+}
+#banner .item .slider-cap  {
+	
+	position: absolute;
+	top:77%;
+	left: 0%;
+	color: white;
+	text-align: center;
+	background: rgba(20,20,20,0.5);
+	width: 100%;
+	
+}
+#banner .item .slider-cap h1
+{
+	padding: 5px 50px;
+}
+#banner .item .slider-cap p{
+	padding: 0 50px 50px
+}
+
+/*
+#banner{
+	
+	
+}
+#banner .item .text-banner {
+	background : rgba(255, 241, 208, 0.8);
+	width: 100%;
+	text-align: center;
+	height: 50px
+}
+#banner h1{color:#555555;
+	font-family: 'Anton', sans-serif;
+	margin-top: 250px;
+	text-align: center;
+	z-index:90
+	
+}
+#banner p{color:#555555;
+	font-family: 'Cousine', monospace;
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*..................................CONTENT-CAUCHUYEN*/
+.cau-chuyen{
+	position: relative;
+	margin-top: 60px;
+}
+.cau-chuyen .container  .text-cauchuyen {
+	text-align: center;
+	width: 90%;
+	top: 45%
+}
+.cau-chuyen .text-cauchuyen{
+	position: absolute;
+	background-color:rgba(255, 241, 208, 0.5);
+
+}
+.cau-chuyen .text-cauchuyen a{
+	text-decoration: none;
+	color: rgb(76, 91, 41);
+	transition: all 0.3s;
+	
+	
+}
+
+.cau-chuyen img {
+	opacity: 0.5;
+	transition: all 0.3s
+}
+.cau-chuyen:hover img {
+	opacity: 1;
+}
+
+
+/*..................................CONTENT-TUYENDUNG*/
+.tuyen-dung{
+	position: relative;
+	margin-top: 60px;
+}
+.tuyen-dung .container  .text-tuyendung {
+	text-align: center;
+	width: 90%;
+	top: 45%
+}
+.tuyen-dung .text-tuyendung{
+	position: absolute;
+	background-color:rgba(255, 241, 208, 0.5);
+
+}
+.tuyen-dung .text-tuyendung a{
+	text-decoration: none;
+	color: rgb(76, 91, 41);
+	transition: all 0.3s;
+	
+	
+}
+
+.tuyen-dung img {
+	opacity: 0.5;
+	transition: all 0.3s
+}
+.tuyen-dung:hover img {
+	opacity: 1;
+}
+
+
+.btn-primary{
+	background-color:#4c5b29;
+	color: #FFFFFF;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 20px;
+	font-family:'Lexend Deca', sans-serif; 
+	
+}
+.btn-primary:hover{
+	background-color:#4c5b29
+}
+
+
+
+
+/*...................Content-tin-tuc*/
+.content-tin-tuc .text-tintuc{
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin: 70px 0 20px;
+}
+
+.content-tin-tuc img{
+	transition: all 0.2s;
+	transform: scale(0.9)
+}
+.content-tin-tuc .col-3:hover img{
+	
+	transform: scale(1)
+}
+.content-tin-tuc h1{
+	color:#555555;
+	font-family: 'Anton', sans-serif;
+	
+}
+.content-tin-tuc h3{
+	font-size: 16px;
+    line-height: 20px;
+    
+    color: #2b2b2b;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+	height: 68px;
+	opacity: 0.5;
+	transition: all 0.3
+
+    
+}
+
+.content-tin-tuc .col-3:hover h3,
+.content-tin-tuc .col-3:hover p{
+	opacity: 1
+}
+
+.content-tin-tuc p {
+	color: #343434;
+	font-size: 14px;
+	opacity: 0.5;
+	transition: all 0.1s
+}
+
+.content-tin-tuc .bam{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 15px 0 100px
+}
+/*...................Footer*/
+
+
+.footer {
+	
+	background-color: #4c5b29;
+	color: white;
+	display: block;
+	
+}
+
+.footer-text{
+	width: 100%
+}
+.footer .thong-tin-cty{
+	display: block
+}
+.footer .thong-tin-cty p {
+	font-size: 16px;
+    line-height: 28px;
+	cursor: pointer;
+	
+}
+.footer .icon-footer .col-4 img{
+	width: 14px 
+}
+.footer  .social .col-4 img{
+	width: 28px
+}
+.footer .social2 .col-4 img{
+	width: 40px
+}
+.footer .footer-text .col-2 {
+	text-align: end;
+}
+
+
+.cau-chuyen-cong h1 {
+	margin: 80px 0;
+	font-family: 'Anton', sans-serif;
+	color: #351F11;
+	padding-right: 10px;
+	text-align: center
+	
+}
+.cau-chuyen-cong p {
+	margin: 50px 0px
+}
+.cau-chuyen-cong img{
+	margin-top: 10px
+}
